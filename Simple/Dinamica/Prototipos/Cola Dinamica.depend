@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1526916516 source:e:\universidad nacional de la matanza\segundo año\programacion\mio\ejercicios\cola dinamica\prototipos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"F_Cola_dinamica.h"
+
+1526926034 e:\universidad nacional de la matanza\segundo año\programacion\mio\ejercicios\cola dinamica\prototipos\f_cola_dinamica.h
+

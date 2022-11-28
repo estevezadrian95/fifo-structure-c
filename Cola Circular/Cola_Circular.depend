@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1528677728 source:c:\users\adria\desktop\programacion\mio\ejercicios\c\pila, cola, lista\cola\cola circular\main.c
+	<stdio.h>
+	<stdlib.h>
+	"F_Cola_Circular.h"
+
+1532443719 c:\users\adria\desktop\programacion\mio\ejercicios\c\pila, cola, lista\cola\cola circular\f_cola_circular.h
+

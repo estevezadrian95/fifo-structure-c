@@ -1,0 +1,43 @@
+void crearCola(tCola *p)
+{
+    p->pri=NULL;
+    p->ult=NULL;
+}
+
+
+int  ponerEnCola(tCola *p, const tPedido *d)
+{
+    tNodo *nue = (tNodo*)malloc(sizeof(tNodo));
+    if(nue == NULL)
+        return 0;
+    nue->info = *d;
+    nue->sig = NULL;
+    if(p->pri == NULL)
+    {
+        p->pri = nue;
+        p->ult = nue;
+    }
+    else
+    {
+        p->ult->sig = nue;
+        p->ult = nue;
+    }
+    return 1;
+}
+
+int  sacarDeCola(tCola *p, tPedido *d)
+{
+    tNodo * aux;
+    if(p->pri==NULL)
+        return 0;
+    aux = p->pri;
+    p->pri = aux->sig;
+    *d=aux->info;
+    free(aux);
+    if(p->pri == NULL)
+        p->ult = NULL;
+    return 1;
+}
+
+
+
